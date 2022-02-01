@@ -2,8 +2,8 @@ import ctypes
 import pathlib
 import os
 
-base = pathlib.Path("")
-lib_address = str(os.path.join(base.resolve(), "mylib.so"))
+base = pathlib.Path()
+lib_address = (base / "mylib.so").resolve()
 print(lib_address)
 
 mylib = ctypes.CDLL(lib_address)
