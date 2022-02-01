@@ -3,7 +3,7 @@
 Steps
 
 1. (Windows) run `dev.bat` to start a Docker container (`gcc` image)
-2. Under `src`, run `compile.sh` or this code from console:
+2. Under `/app/src`, run `compile.sh` or this code from console:
    ``` shell
    gcc -fPIC -shared -o mylib.so demo.c
    ```
